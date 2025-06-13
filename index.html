@@ -45,19 +45,52 @@
       padding: 20px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .my-photo{
-     width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #4CAF50;
-      transition: transform 0.3s ease;
-    }
-    .header-text{
-      justify-content: center;
-      align-items: center;
-      font-family: Arial, sans-serif;
-    }
+	
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;      /* Center the whole row */
+  background-color: #333;
+  color: white;
+  padding: 20px 40px;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.designation {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.college {
+  font-size: 16px;
+  font-weight:bold;	
+  color: #ccc;
+}
+
+
+
     #h4-section{
       font-size: 36px;
       font-weight: bold;
@@ -68,179 +101,326 @@
       padding: 60px 30px 30px 30px;
       box-sizing: border-box;
       color: white;*/
-        height:300vh;
+        height:100vh;
       text-align: center;       /* Horizontally center text */
       display: flex;            /* Enable flexbox */
       font-size: 20;
       justify-content: center;  /* Center horizontally (optional with flex) */
       align-items: center;      /* Center vertically */
       height: 100vh;            /* Full viewport height */
-      background-color: #f0f0f0; /* Just for visibility */
-   
-    }
+      background-color: #f0f0f0; /* Just for visibility */ }
 
       #projects{
       text-align: center;
       font-size: 25px;
       color:white;
     }
+
+
     /* Different background colors for each section */
     section#h1-section { background: #3ebeadd8; }
     section#h2-section { background: #5b7382; }
     section#h3-section { background: #a5e8c1; }
     section#h4-section { background: #d7b8e4; }
-    section#h5-section { background: #e3c697; }
-    section#h6-section { background: #34495e; }
-    section#h8-section { background: #57795e; }
+    section#h5-section { background: #h4h4h4; }
+    section#h7-section { background: #57795e; }
 
     /* Add some spacing under the fixed nav */
     body {
       padding-top: 50px;
     }
 
-#skills{
-   width: 200px;
-    /*  padding: 20px;
-      border: 2px solid #333;
-      text-align: center;
-      display: flex;
-      justify-content: center;*/
-      font-size: 20px;
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      text-align: center;
-      padding: 3rem 1rem 5rem;
-      position: relative;
-}
-#education{
-   width: 200px;
-    /*  padding: 20px;
-      border: 2px solid #333;
-      text-align: center;
-      display: flex;
-      justify-content: center;*/
-      font-size: 20px;
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      text-align: center;
-      padding: 3rem 1rem 5rem;
-      position: relative;
+//certificate
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;                 /* Allow multiple lines */
+  justify-content: center;         /* Center images horizontally */
+  gap: 20px;                       /* Space between images */
 }
 
+.photo-gallery img {
+  width: calc(25% - 20px);         /* 4 images per row with spacing */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse Moving Clock</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="clock">00:00:00</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+.styled-paragraph {
+      background-color: #e8f5e9;
+	align-text:justified;
+      border-left: 5px solid #4CAF50;
+      padding: 20px;
+      border-radius: 8px;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #2e7d32;
+      margin: auto;
+    }
+
+.experience-section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.experience-box {
+  background-color: #fff;
+  border-left: 3px solid #4CAF50;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.certificates-section h2 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.certificates-grid {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.certificates-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.certificates-grid img:hover {
+  transform: scale(1.03);
+}
+
+
+
+.education-box {
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  padding: 30px;
+  margin: auto;
+}
+
+
+.skills-section {
+  margin: auto;
+  text-align: center;
+}
+
+.skills-section h2 {
+  color: #535353;
+  margin-bottom: 20px;
+}
+
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill {
+  background-color: #547890;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.skill:hover {
+  background-color: #388e3c;
+}
+
+
+.contact {
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+.footer-content {
+  text-align:center;
+  color: black;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+
+/* Animation */
   </style>
 </head>
 <body>
       
 <!-- Header with Name and Photo -->
-  <header class="header-flex">
-    <div class="header-text">
-      <h1>Mrs. D Hepzi Violet Amirthamani</h1>
-      <h3>Assistant Professor | SET | NET | Department of Computer Science</h3>
-      <h3>Peri College of Arts and Science, Mannivakkam, Chennai</h3>
-        <img src="violet.png" alt="Violet D" class="my-photo">
+  
+<header class="header">
+    <img src="violet.png" alt="Profile Photo" class="profile-photo">
+    <div class="info">
+      <div class="name">Mrs. D Hepzi Violet Amirthamani MSc., M.Phil., SET., NET.,</div>
+      <div class="designation">Assistant Professor</div>
+      <div class="college">Peri College of Arts and Science</div>
     </div>
-      </header>
+  </header>
+
+
 <nav>
   <a href="#h1-section" class="active">About</a>
   <a href="#h2-section">Certificate</a>
   <a href="#h3-section">Experience</a>
   <a href="#h4-section">Education</a>
   <a href="#h5-section">Skill</a>
-  <a href="#h6-section">Project</a>
-  <a href="#h8-section">Contact</a>
+  <a href="#h7-section">Contact</a>
 </nav>
 
-<section id="h1-section">
+<section id="h1-section" class="styled-paragraph">
   <p>Mrs. D Hepzi Violet Amirthamani is a dedicated Computer Science Professor with over 
     7 years of experience in teaching. Specializing in areas such as algorithms, 
-    Data structures, machine learning, and software engineering.
-
-With a passion for nurturing the next generation of computer scientists, 
-  employs a hands-on, student-centered teaching approach that encourages critical thinking
-  and problem-solving skills. Their research interests include computer wireless sensor network.
-
-the classroom, I actively collaborates on interdisciplinary projects and mentors students
-in developing innovative solutions to real-world problems. Committed to advancing the field, 
-they continuously strive to bridge theoretical knowledge with practical applications.In the 
-field of computer science, information is a fundamental concept that plays a crucial role in
-the design and development.</p>
-
+    Data structures, machine learning, and software engineering. With a passion for nurturing the next generation of computer scientists, employs a hands-on, student-centered teaching approach that encourages critical thinking and problem-solving skills. Their research interests include computer wireless sensor network. The classroom, I actively collaborates on interdisciplinary projects and mentors students in developing innovative solutions to real-world problems. Committed to advancing the field, they continuously strive to bridge theoretical knowledge with practical applications.In the field of computer science, information is a fundamental concept that plays a crucial role in the design and development.</p>
 </section>
 
-<section id="h2-section" id="certificate">
-  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-    <div style="text-align: center;">
-      <img src="cloud.png" alt="MS-356" style="max-width: 400px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-      </a>
-    <img src="web.png" alt="MS-356" style="max-width: 400px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-     </a>
-     <img src="open.png" alt="MS-356" style="max-width: 400px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-     <img src="credly.png" alt="MS-356" style="max-width: 400px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-      </a>
-      </div>
-</section>
+<section id="h2-section" class="certificate-section">
+<div class="certificates-grid">
+      <img src="cloud.png" alt="Certificate 1">
+      <img src="web.png" alt="Certificate 2">
+      <img src="open.png" alt="Certificate 3">
+      <img src="nan.jpg" alt="Certificate 4">
+      <img src="nan2.jpg" alt="Certificate 5">
+      <img src="nan3.jpg" alt="Certificate 6">
+      <!-- Add more as needed -->
+    </div>
+  </section>
 
-<section id="h3-section">
-  <p>I was working as a lecture in Sri Ram Nallamani Yadhava College at Tenkasi, 
-    I was working as a lecture in CSI Jayaraj Annapackiam College at Nallur,
-    I was working as a lecture in Prince Shri Venkateshwara Arts and Science College and
-    Now i am Working as a Assistant professor in Peri College of Arts and science</p>
-</section>
 
+<section id="h3-section" class="experience-section">
+    <div class-"experience">
+    <div class="experience-box">
+      <h3>Lecturer</h3>
+      <p><strong>Nallamani Yadhava Arts and Science College, Tenkasi.</strong> </p>
+      <p><strong>4 years</strong></p>
+    </div>
+
+<div class="experience-box">
+      <h3>Assistant Professor</h3>
+      <p><strong>Prince Shri Venkateshwara Arts and Science College</strong> </p>
+      <p><strong>2 years 6 Months</strong></p>
+    </div>
+
+<div class="experience-box">
+      <h3>Assistant Professor</h3>
+      <p><strong>Peri Arts and Science College</strong> </p>
+      <p><strong>Present</strong></p>
+    </div>
+</div>
+  </section>
+
+
+
+//Education
 <section id="h4-section"> 
-  <ul id="education">Education
-    <ol>BSc Computer Science</ol>
-    <ol></ol>MSc Computer ScienceJava</ol>
-    <ol>Mphil Computer Science</ol></ul>
-</section>
-
-<section id="h5-section">
-    <ul id="skills">
-    <ol>Cybersecurity</ol>
-    <ol>Java</ol>
-    <ol>Blockchain</ol>
-    <ol>C++</ol>
-    <ol>JavaScript</ol>
-    <ol>C</ol>
-    <ol>Visual Basic</ol>
-    <ol>Oracle</ol>
-  </ul>
-</section>
-
-<section id="h6-section">
-
-  <ul>
-    <li><a href="#">AI-Based Alternator Control System</a></li>
-    <li><a href= "https://github.com/techtrainer20/blockchain.git" target="_blank">Cloud Security with IBM</a></li>
-    <li><a href="#">IBM Chatbot</a></li>
-    <li><a href="#">Generic Chatbot</a></li>
-  </ul>
-</section>
-
-<section>
-  <h2>Projects</h2>
-  <ul id="projects">
-    <ol><a href="#">AI-Based Alternator Control System</a></ol>
-    <ol><a href= "https://github.com/techtrainer20/blockchain.git" target="_blank">Cloud Security with IBM</a></ol>
-    <ol><a href="#">IBM Skills Build</a></ol>
-    <ol><a href="#">Gmail</a></ol>
-  </ul>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:hepzwin@gmail.com">hepzwin@gmail.com</a></p>
-  <p>Phone: +91-8790554800</p>
-  <p>Location: Chennai, India</p>
-  <div style="margin-top: 1rem;">
-    <a href="https:gmail.com" target="_blank">google</a>|
-    <a href="https://linkedin.com/in/andrin" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/andrin" target="_blank">GitHub</a> |
-    <a href="https://twitter.com/andrin" target="_blank">Twitter</a> |
-    <a href="https://instagram.com/andrin" target="_blank">Instagram</a>
+<div class="education-box">
+    <h2>Education</h2>
+    <div class="edu-entry">
+      <p><strong>BSc Computer Science</p>
+      <p><strong>MSc Computer Science</p>
+      <p><strong>Mphil Computer Science</strong></p>
+    </div>
   </div>
 </section>
 
+
+
+<!--Skills-->
+<section id="h5-section" class="skills-section">
+    <div class="skills-box">
+      <span class="skill">C</span>
+      <span class="skill">C++</span>
+      <span class="skill">Java</span>
+      <span class="skill">Python</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">SQL</span>
+    </div>
+  </section>
+
+
+
+<section id="h7-section">
+<div class="contact">
+  <h3>Contact Details</h3>
+  <p><strong>Phone:</strong> +91 8790554800</p>
+  <p><strong>Email:</strong> <a href="mailto:hepzwin@gmail.com">hepzwin@gmail.com</a></p>
+  <p><strong>Address:</strong> Gowrivakkam, Chennai</p></div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>Mrs. D Hepzi Violet Amirthamani. All rights reserved.</p></div>
+    <div class="footer-links">
+    
+  <a href="#h1-section" class="active">About</a>
+  <a href="#h2-section">Certificate</a>
+  <a href="#h3-section">Experience</a>
+  <a href="#h4-section">Education</a>
+  <a href="#h5-section">Skill</a>
+  <a href="#h7-section">Contact</a>
+      <a href="#h8">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
 
 <script>
   // Highlight nav link based on scroll position
