@@ -1,0 +1,23 @@
+<nav>
+  <a href="#h1-section" class="active">About</a>
+  <a href="#h2-section">Certificate</a>
+  <a href="#h3-section">Experience</a>
+  <a href="#h4-section">Education</a>
+  <a href="#h5-section">Skill</a>
+  <a href="#h6-section">Project</a>
+  <a href="#h7-section">Resume</a>
+  <a href="#h8-section">Contact</a>
+</nav>
+
+
+
+<div class="button-group">>
+        <button onClick="navigate('about.html')" class="active" id="#h1-section">About</button>
+        <button onClick="navigate('certificate.html')" id="#h2-section">Certificate</button>
+        <button onClick="navigate('experience.html')" id="#h3-section">Experience</button>
+        <button onClick="navigate('education.html')" id="#h4-section">Education</button>
+        <button onClick="navigate('skill.html')" id="#h5-section">Skill</button>
+        <button onClick="navigate('project.html')" id="#h6-section">Project</button>
+        <button onClick="navigate('resume.html')" id="#h7-section">Resume</button>
+        <button onClick="navigate('contact.html')" id="#h8-section">Contact</button>
+      </div>  
